@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern><set>greetings</set></pattern>
+        <template>
+            Greetings! Let me help you find the right computer science 
+            career for you! Type "help" to begin.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>help</pattern>
+        <template>
+            I'll ask a few questions to find the right career for you. 
+            Would you prefer to paint a picture or solve a puzzle?
+        </template>
+    </category>
+    
+    <category>
+        <pattern>picture</pattern>
+        <that>Would you prefer to paint a picture or solve a puzzle</that>
+        <template>Do you like to share your work with the public?</template>
+    </category>
+    <category>
+        <pattern>_ picture</pattern>
+        <that>Would you prefer to paint a picture or solve a puzzle</that>
+        <template><srai>picture</srai></template>
+    </category>
+    <category>
+        <pattern>picture _</pattern>
+        <that>Would you prefer to paint a picture or solve a puzzle</that>
+        <template><srai>picture</srai></template>
+    </category>
+    <category>
+        <pattern>_ picture *</pattern>
+        <that>Would you prefer to paint a picture or solve a puzzle</that>
+        <template><srai>picture</srai></template>
+    </category>
+    
+    <category>
+        <pattern><set>affirmative</set></pattern>
+        <that>Do you like to share your work with the public</that>
+        <template>
+            I think you'd make a good Web Designer.
+            <link>
+                <text>Learn more here!</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm</url>
+            </link>
+        </template>
+    </category>
+    <category>
+        <pattern><set>negative</set></pattern>
+        <that>Do you like to share your work with the public</that>
+        <template>
+            I think you'd make a good Database Architect.
+            <link>
+                <text>Learn more here!</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>puzzle</pattern>
+        <that>Would you prefer to paint a picture or solve a puzzle</that>
+        <template>Do you like to help others with their work?</template>
+    </category>
+    <category>
+        <pattern>_ puzzle</pattern>
+        <that>Would you prefer to paint a picture or solve a puzzle</that>
+        <template><srai>puzzle</srai></template>
+    </category>
+    <category>
+        <pattern>puzzle _</pattern>
+        <that>Would you prefer to paint a picture or solve a puzzle</that>
+        <template><srai>puzzle</srai></template>
+    </category>
+    <category>
+        <pattern>_ puzzle *</pattern>
+        <that>Would you prefer to paint a picture or solve a puzzle</that>
+        <template><srai>puzzle</srai></template>
+    </category>
+    
+    <category>
+        <pattern><set>affirmative</set></pattern>
+        <that>Do you like to help others with their work</that>
+        <template>Would you say you have good customer service skills?</template>
+    </category>
+    <category>
+        <pattern><set>negative</set></pattern>
+        <that>Do you like to help others with their work</that>
+        <template>
+            I think you'd make a good Computer Programmer. 
+            <link>
+                <text>Learn more here!</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern><set>affirmative</set></pattern>
+        <that>Would you say you have good customer service skills</that>
+        <template>
+            I think you'd make a good Computer Support Specialist.
+            <link>
+                <text>Learn more here!</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm</url>
+            </link>
+        </template>
+    </category>
+    <category>
+        <pattern><set>negative</set></pattern>
+        <that>Would you say you have good customer service skills</that>
+        <template>
+            I think you'd make a good Quality Assurance Analyst.
+            <link>
+                <text>Learn more here!</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</url>
+            </link>
+        </template>
+    </category>
+    
+</aiml>
