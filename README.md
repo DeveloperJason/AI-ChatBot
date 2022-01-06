@@ -1,4 +1,4 @@
-# WGU-951
+# AI Chatbot
 Computer Science career finder chatbot
 
 Jason Philpy
